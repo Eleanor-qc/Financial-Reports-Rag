@@ -1,0 +1,7 @@
+streamlit
+google-cloud-aiplatform
+google-cloud-storage
+faiss-cpu
+numpy
+pydantic
+pdfplumber

@@ -8,8 +8,9 @@ import vertexai
 from google.cloud import storage
 from vertexai.preview.language_models import TextEmbeddingModel, TextEmbeddingInput
 
-PROJECT_ID = "qc2360-ieor4526-fall2025"
-BUCKET_NAME = "qc2360-fall2025-bucket"
+PROJECT_ID = PROJECT_ID
+BUCKET_NAME = BUCKET_NAME
+LOCATION = LOCATION
 
 CHUNKS_TEXT_BLOB = "rag/chunks_text.pkl"
 CHUNKS_METADATA_BLOB = "rag/chunks_metadata.pkl"
@@ -229,7 +230,7 @@ def main():
 
     chunk_records = prepare_chunk_records(texts, metadata, titles, chunk_ids)
 
-    vertexai.init(project="qc2360-ieor4526-fall2025", location="us-central1")
+    vertexai.init(project=PROJECT_ID, location=LOCATION)
     model = TextEmbeddingModel.from_pretrained("text-embedding-005")
 
     index, embedded_chunks = build_faiss_index(chunk_records, model=model)

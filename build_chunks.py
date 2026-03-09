@@ -12,9 +12,9 @@ from google.cloud import storage
 # =========================
 # Config
 # =========================
-PROJECT_ID = "qc2360-ieor4526-fall2025"
-LOCATION = "us-central1"
-BUCKET_NAME = "qc2360-fall2025-bucket"
+PROJECT_ID = PROJECT_ID
+LOCATION = LOCATION
+BUCKET_NAME = BUCKET_NAME
 
 COMPANIES = ["Alphabet", "Amazon", "Microsoft", "Oracle"]
 YEARS = range(2020, 2026)

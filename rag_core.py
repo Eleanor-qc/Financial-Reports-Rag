@@ -15,8 +15,8 @@ from vertexai.preview.language_models import TextEmbeddingModel, TextEmbeddingIn
 # ===== utils =====
 from pydantic import BaseModel
 
-PROJECT_ID = "qc2360-ieor4526-fall2025"
-LOCATION = "us-central1"
+PROJECT_ID = PROJECT_ID
+LOCATION = LOCATION
 
 DEBUG = False
 

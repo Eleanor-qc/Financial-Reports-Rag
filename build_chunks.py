@@ -367,7 +367,7 @@ def save_and_upload_chunks(chunks):
     with open("chunks_metadata.pkl", "wb") as f:
         pickle.dump(chunks_metadata, f)
 
-        client = storage.Client(project="qc2360-ieor4526-fall2025")
+    client = storage.Client(project="qc2360-ieor4526-fall2025")
     
     bucket = client.bucket("qc2360-fall2025-bucket")
     
